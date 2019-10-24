@@ -157,6 +157,7 @@ if __name__ == '__main__':
 ```cmd
 $ ngrok http 5000
 ```
+![ngrok1]( https://user-images.githubusercontent.com/33045725/67465759-c140b180-f680-11e9-8318-0cf89827a98a.JPG)
 
 - telegram에 웹 훅 등록
 ```
@@ -194,3 +195,34 @@ https://api.telegram.org/bot<token>/deleteWebhook
 ```
 https://api.telegram.org/bot<token>/setWebhook?url=<pythonanywhere_url>/<chat_id>
 ```
+
+
+##### google cloud api를 이용한 번역기
+
+- https://cloud.google.com/apis/docs/overview
+- 관련 문서( https://cloud.google.com/translate/docs/quickstart-client-libraries?hl=ko )
+- 프로젝트 생성
+- 구글 API 키 생성
+(콘솔 > API 및 서비스 > 사용자 인증 정보 > 사용자 인증 정보 만들기)
+- API 라이브러리 > Cloud Translation API 사용설정
+- google.py 생성
+```python
+import requests
+from decouple import config
+
+api_url="https://translation.googleapis.com/language/translate/v2"
+key=config('GOOGLE_TRAN_TOKEN')
+data = {
+    'q':'엄마 판다는 새까가 있네',
+    'source':'ko',
+    'target':'en'
+}
+
+result = requests.post(f'{api_url}?key={key}', data).json()
+print(result)
+```
+
+
+
+
+
