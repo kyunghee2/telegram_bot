@@ -1,7 +1,18 @@
+<<<<<<< HEAD
+=======
+# Created by https://www.gitignore.io/api/python
+# Edit at https://www.gitignore.io/?templates=python
+
+### Python ###
+>>>>>>> add telegram bot
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> add telegram bot
 
 # C extensions
 *.so
@@ -20,6 +31,11 @@ parts/
 sdist/
 var/
 wheels/
+<<<<<<< HEAD
+=======
+pip-wheel-metadata/
+share/python-wheels/
+>>>>>>> add telegram bot
 *.egg-info/
 .installed.cfg
 *.egg
@@ -38,6 +54,10 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+<<<<<<< HEAD
+=======
+.nox/
+>>>>>>> add telegram bot
 .coverage
 .coverage.*
 .cache
@@ -51,6 +71,7 @@ coverage.xml
 *.mo
 *.pot
 
+<<<<<<< HEAD
 # Django stuff:
 *.log
 local_settings.py
@@ -60,6 +81,8 @@ db.sqlite3
 instance/
 .webassets-cache
 
+=======
+>>>>>>> add telegram bot
 # Scrapy stuff:
 .scrapy
 
@@ -69,18 +92,32 @@ docs/_build/
 # PyBuilder
 target/
 
+<<<<<<< HEAD
 # Jupyter Notebook
 .ipynb_checkpoints
 
 # pyenv
 .python-version
 
+=======
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+>>>>>>> add telegram bot
 # celery beat schedule file
 celerybeat-schedule
 
 # SageMath parsed files
 *.sage.py
 
+<<<<<<< HEAD
 # Environments
 .env
 .venv
@@ -90,6 +127,8 @@ ENV/
 env.bak/
 venv.bak/
 
+=======
+>>>>>>> add telegram bot
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -97,8 +136,26 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+<<<<<<< HEAD
+=======
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+>>>>>>> add telegram bot
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
+=======
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# End of https://www.gitignore.io/api/python
+>>>>>>> add telegram bot
