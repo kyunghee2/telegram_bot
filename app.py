@@ -46,7 +46,9 @@ def telegram():
         text = f'신이 {user_name}님을 만들때 {first},{second},{third}'
         requests.get(f'{api_url}/bot{token}/sendMessage?chat_id={chat_id}&text={text}')
     else:
-        requests.get(f'{api_url}/bot{token}/sendMessage?chat_id={chat_id}&text={text}')
+        text += "<br><a href='http://google.com'>Google go</a>"
+        text += ""
+        requests.get(f'{api_url}/bot{token}/sendMessage?chat_id={chat_id}&text={text}&parse_mode=HTML')
     
     return '', 200
 
